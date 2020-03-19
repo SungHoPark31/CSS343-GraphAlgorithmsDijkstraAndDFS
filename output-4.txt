@@ -1,0 +1,175 @@
+Description		From_Node	To_Node		Dijkstra's Path
+Apple Store
+				1			2			20		1 2
+				1			3			30		1 3
+				1			4			10		1 4
+				1			5			35		1 5
+				1			6			50		1 6
+				1			7			40		1 7
+Best Buy
+				2			1			20		2 1
+				2			3			30		2 3
+				2			4			20		2 4
+				2			5			55		2 1 5
+				2			6			70		2 1 6
+				2			7			60		2 1 7
+Fred Meyer
+				3			1			50		3 4 1
+				3			2			70		3 4 1 2
+				3			4			30		3 4
+				3			5			85		3 4 1 5
+				3			6			100		3 4 1 6
+				3			7			90		3 4 1 7
+Walmart
+				4			1			20		4 1
+				4			2			40		4 1 2
+				4			3			50		4 1 3
+				4			5			55		4 1 5
+				4			6			70		4 1 6
+				4			7			60		4 1 7
+Target
+				5			1			30		5 2 1
+				5			2			10		5 2
+				5			3			40		5 2 3
+				5			4			30		5 2 4
+				5			6			80		5 2 1 6
+				5			7			70		5 2 1 7
+Alderwood Mall
+				6			1			80		6 3 4 1
+				6			2			100		6 3 4 1 2
+				6			3			30		6 3
+				6			4			60		6 3 4
+				6			5			115		6 3 4 1 5
+				6			7			120		6 3 4 1 7
+Macy's
+				7			1			40		7 4 1
+				7			2			60		7 4 1 2
+				7			3			70		7 4 1 3
+				7			4			20		7 4
+				7			5			75		7 4 1 5
+				7			6			90		7 4 1 6
+3	1	50	3 4 1
+Fred Meyer
+Walmart
+Apple Store
+
+1	2	20	1 2
+Apple Store
+Best Buy
+
+1	4	10	1 4
+Apple Store
+Walmart
+
+2	6	70	2 1 6
+Best Buy
+Apple Store
+Alderwood Mall
+
+5	3	40	5 2 3
+Target
+Best Buy
+Fred Meyer
+
+6	7	120	6 3 4 1 7
+Alderwood Mall
+Fred Meyer
+Walmart
+Apple Store
+Macy's
+
+7	4	20	7 4
+Macy's
+Walmart
+
+7	6	90	7 4 1 6
+Macy's
+Walmart
+Apple Store
+Alderwood Mall
+
+Description		From_Node	To_Node		Dijkstra's Path
+aaa
+				1			2			10		1 2
+				1			3			55		1 2 3
+				1			4			20		1 2 4
+bbb
+				2			1			----		
+				2			3			45		2 3
+				2			4			10		2 4
+ccc
+				3			1			----		
+				3			2			20		3 2
+				3			4			30		3 2 4
+ddd
+				4			1			----		
+				4			2			40		4 2
+				4			3			85		4 2 3
+3	1	-----
+
+1	2	10	1 2
+aaa
+bbb
+
+1	4	20	1 2 4
+aaa
+bbb
+ddd
+
+2	6	-----
+
+5	3	-----
+
+6	7	-----
+
+7	4	-----
+
+7	6	-----
+
+Graph: 
+Node1		Apple Store
+	Edge	1 7
+	Edge	1 6
+	Edge	1 5
+	Edge	1 4
+	Edge	1 3
+	Edge	1 2
+
+Node2		Best Buy
+	Edge	2 4
+	Edge	2 3
+	Edge	2 1
+
+Node3		Fred Meyer
+	Edge	3 4
+
+Node4		Walmart
+	Edge	4 1
+
+Node5		Target
+	Edge	5 2
+	Edge	5 4
+
+Node6		Alderwood Mall
+	Edge	6 3
+
+Node7		Macy's
+	Edge	7 4
+
+Depth-First Ordering: 1 7 4 6 3 5 2 
+Graph: 
+Node1		aaa
+	Edge	1 3
+	Edge	1 2
+
+Node2		bbb
+	Edge	2 4
+	Edge	2 3
+
+Node3		ccc
+	Edge	3 2
+
+Node4		ddd
+	Edge	4 2
+
+Depth-First Ordering: 1 3 2 4 
